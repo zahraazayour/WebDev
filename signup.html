@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accessStyle.css">
+</head>
+
+
+
+<body style="background-color: #9BBEC8;">
+    <div class="container">
+
+        <div class="paragraph" style="border:0;">
+            <form action="signup.php" method="POST" name="signup-form">
+                <label for="fm">Full Name</label>
+                <br>
+                <input type="text" name="Fullname" class="txtfield">
+                <br>
+                <label for="un">Username</label>
+                <br>
+                <input type="text" name="email" class="txtfield">
+                <br>
+                <label for="pass">Password</label>
+                <br>
+                <input type="password" name="pass" class="txtfield">
+                <br>
+                <label for="sex">Sex</label>
+                <br>
+                <input type="text" name="sex" class="txtfield">
+                <br>
+                <label for="birthdate">Date of Birth</label>
+                <br>
+                <input type="text" name="birthdate" class="txtfield">
+                <br>
+                <br>
+                <input style="margin-right: 4%; margin-left: 1.1%; background-color: #8b69bf; color: #fff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;" type="button" value="Sign Up" class="mButton" onclick="SignUp()" onmouseover="this.style.backgroundColor='#6d48a3'" onmouseout="this.style.backgroundColor='#8b69bf'">
+            </div>
+                
+                <br><br>
+                <span style="font-size: 16px;
+                color: #801477;">Have an account?</span> <a style="font-size: 16px;
+                color: #801477;" href="index.php">Login</a>
+            </form>
+        </div>
+
+    <script>
+        function SignUp() {
+        var mForm = document.querySelector("form[name='signup-form']");
+        var fm = mForm.elements["Fullname"].value;
+        var un = mForm.elements["email"].value;
+        var pass = mForm.elements["pass"].value;
+        var sex = mForm.elements["sex"].value;
+        var birthdate = mForm.elements["birthdate"].value;
+    
+            // Submit the form
+        mForm.submit();
+        
+    }
+    
+        function ClearForm(){
+            var mForm=document.querySelector("form[name='signup-form']");
+            mForm.elements["Fullname"].value="";
+            mForm.elements["email"].value="";
+            mForm.elements["pass"].value="";
+            mForm.elements["sex"].value="";
+            mForm.elements["birthdate"].value="";
+        }
+    </script>
+    
+</body>
+
+
+</html>
+

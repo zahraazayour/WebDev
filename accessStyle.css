@@ -1,0 +1,140 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp6135097.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%; /* Full-width background */
+}
+
+.signup {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly increased opacity */
+    border-radius: 12px; /* Rounder corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    text-align: center; /* Centered text */
+    padding: 40px; /* Increased padding */
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 10px; /* Slight margin adjustment */
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.signup-left,
+.signup-right {
+    flex: 1;
+    min-width: 45%;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px; /* Increased margin */
+    color: #666; /* Softer text color */
+}
+
+.input-cont {
+    position: relative;
+}
+
+.input-cont i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px; /* Slight adjustment */
+    color: #999; /* Lighter icon color */
+}
+
+.input-txt {
+    width: calc(100% - 24px);
+    padding: 12px; /* Increased padding */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Rounder corners */
+    font-size: 16px; /* Increased font size */
+    padding-left: 36px; /* Adjusted padding */
+}
+
+#togglePassword,
+#togglecPassword {
+    float: right;
+    cursor: pointer;
+    color: #999; /* Lighter icon color */
+    margin-top: 12px; /* Increased margin */
+}
+
+.gender {
+    display: flex;
+    gap: 20px;
+}
+
+.gender .radio {
+    flex: 1;
+}
+
+.button {
+    margin-top: 30px; /* Increased margin */
+    background-color: #d798ca;
+    color: #fff;
+    cursor: pointer;
+    padding: 14px 20px; /* Adjusted padding */
+    border: none;
+    border-radius: 6px; /* Rounder corners */
+    font-size: 18px; /* Increased font size */
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #a04577;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px; /* Increased margin */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.logo {
+    width: 60px; /* Slightly larger logo */
+    height: auto;
+    margin-right: 15px; /* Increased margin */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Lighter background color */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+}
+
+.paragraph {
+    text-align: center;
+    color: #555; /* Slightly darker text color */
+    font-size: 16px; /* Adjusted font size */
+}
